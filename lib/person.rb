@@ -4,7 +4,7 @@ class Person
     :t_shirt_size, :wrist_size, :glove_size, :pant_length, :pant_width
 
   def initialize(attributes)
-    attributes.send {|key, value| ()(":key="), value) }
+    attributes.send {|key, value| ((":key="), value) }
   end
 
 end
